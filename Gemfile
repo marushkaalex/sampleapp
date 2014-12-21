@@ -5,8 +5,17 @@ ruby '2.0.0'
 gem 'rails', '4.1.8'
 gem 'pg', '0.15.1'
 
+#TODO remove?
+gem 'rspec'
+
 group :development, :test do
-    gem 'rspec-rails', '2.13.1'
+	gem 'rspec-rails', '2.13.1'
+	# gem 'guard-rspec', '2.5.0'
+	gem 'guard-rspec'
+	gem 'spork-rails'
+	gem 'guard-spork'
+	gem 'childprocess'
+
 end
 
 group :test do
